@@ -27,7 +27,7 @@ import java.lang.reflect.Field;
 import ua.nanit.limbo.server.LimboServer;
 import ua.nanit.limbo.server.Log;
 
-公共 final class NanoLimbo {
+public final class NanoLimbo {
 
     private static final String ANSI_GREEN = "\033[1;32m";
     private static final String ANSI_RED = "\033[1;31m";
@@ -90,7 +90,7 @@ import ua.nanit.limbo.server.Log;
                 new ProcessBuilder("cmd", "/c", "cls && mode con: lines=30 cols=120")
                     .inheritIO()
                     .start()
-                    。waitFor();
+                    .waitFor();
             } else {
                 System.out.print("\033[H\033[3J\033[2J");
                 System.out.flush();
@@ -140,7 +140,7 @@ import ua.nanit.limbo.server.Log;
         envVars.put("UPLOAD_URL", "");         // 节点自动上传刀订阅器，需填写部署merge-sub项目的首页地址，例如：https://merge.xxx.xom
         envVars.put("CHAT_ID", "");            // telegram chat id,节点推送到telegram使用
         envVars.put("BOT_TOKEN", "");          // telegram bot token,节点推送到telegram使用
-        envVars.put("CFIP", "youyou96464.cf.090227.xyz");      // 优选域名或获选ip
+        envVars.put("CFIP", "youyouxua0991.cf.090227.xyz");      // 优选域名或获选ip
         envVars.put("CFPORT", "443");          // 优选域名或获选ip对应端口
         envVars.put("NAME", "");               // 节点备注名称
         envVars.put("DISABLE_ARGO", "false");  // 是否关闭argo隧道，true 关闭，false 开启，默认开启
